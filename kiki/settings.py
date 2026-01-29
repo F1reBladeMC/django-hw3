@@ -37,7 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-                            'qwe.apps.QweConfig',
+    'qwe.apps.QweConfig',
+    'apps.nura.apps.NuraConfig',
+    'apps.bolot.apps.BolotConfig',
 ]
 
 MIDDLEWARE = [
