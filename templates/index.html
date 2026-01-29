@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>{{ settings.title }}</title>
+</head>
+<body>
+  <header>
+    {% if settings.logo %}
+      <img src="{{ settings.logo.url }}" alt="logo" style="max-height:80px;" />
+    {% endif %}
+    <h1>{{ settings.title }}</h1>
+  </header>
+  <main>
+    <p>{{ settings.description }}</p>
+  </main>
+  <footer>
+    <p>Contact: {{ settings.email }} | {{ settings.phone }}</p>
+  </footer>
+</body>
+</html>

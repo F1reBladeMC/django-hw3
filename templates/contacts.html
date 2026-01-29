@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Contacts — {{ settings.title }}</title>
+</head>
+<body>
+  <h1>Contacts</h1>
+  <ul>
+    <li>Email: {{ settings.email }}</li>
+    <li>Phone: {{ settings.phone }}</li>
+    <li>Address: {{ settings.locate }}</li>
+  </ul>
+  {% if settings.icon %}
+    <img src="{{ settings.icon.url }}" alt="icon" style="max-height:60px;" />
+  {% endif %}
+  <p><a href="/">Home</a></p>
+</body>
+</html>
